@@ -241,6 +241,167 @@
         </div>
     </section>
 
+    <!-- Exercise 8 -->
+    <section id="ex-8">
+        <h2 class="text-2xl font-bold mb-4">8. Hero Section with Overlay</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <div class="relative h-72 rounded-xl overflow-hidden">
+
+                <!-- Background Image -->
+                <img
+                        src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=500&fit=crop"
+                        alt="Hero background"
+                        class="w-full h-full object-cover"
+                />
+
+                <!-- Dark Overlay -->
+                <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
+
+                <!-- Centered Text Content -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 space-y-4">
+                    <h2 class="text-4xl font-extrabold text-white">Build. Learn. Grow.</h2>
+                    <p class="text-gray-200 text-lg max-w-md leading-relaxed">
+                        Master modern web development one concept at a time, with hands-on
+                        practice and real-world projects.
+                    </p>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold
+                       hover:bg-blue-700 transition-colors duration-300
+                       focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                        Get Started
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exercise 9 -->
+    <section id="ex-9">
+        <h2 class="text-2xl font-bold mb-4">9. Pricing Table Comparison</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+
+                <!-- Free Plan -->
+                <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 space-y-4">
+                    <div class="space-y-1">
+                        <p class="text-sm font-semibold text-gray-400 uppercase tracking-wide">Starter</p>
+                        <h3 class="text-3xl font-extrabold text-gray-900">0 SEK</h3>
+                        <p class="text-gray-500 text-sm">per month</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✅ 1 Project</li>
+                        <li>✅ 5 GB Storage</li>
+                        <li>✅ Community Support</li>
+                        <li>❌ Custom Domain</li>
+                        <li>❌ Analytics</li>
+                    </ul>
+                    <button class="w-full border border-blue-600 text-blue-600 py-2 rounded-lg font-semibold
+                       hover:bg-blue-50 transition-colors duration-300
+                       focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Pro Plan (Highlighted) -->
+                <div class="bg-blue-600 border-2 border-blue-500 rounded-xl shadow-xl p-6 space-y-4 scale-105">
+                    <div class="space-y-1">
+                        <p class="text-sm font-semibold text-blue-200 uppercase tracking-wide">Pro</p>
+                        <h3 class="text-3xl font-extrabold text-white">299 SEK</h3>
+                        <p class="text-blue-200 text-sm">per month</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-white">
+                        <li>✅ 10 Projects</li>
+                        <li>✅ 50 GB Storage</li>
+                        <li>✅ Priority Support</li>
+                        <li>✅ Custom Domain</li>
+                        <li>✅ Analytics</li>
+                    </ul>
+                    <button class="w-full bg-white text-blue-600 py-2 rounded-lg font-semibold
+                       hover:bg-blue-50 transition-colors duration-300
+                       focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2">
+                        Upgrade Now
+                    </button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 space-y-4">
+                    <div class="space-y-1">
+                        <p class="text-sm font-semibold text-gray-400 uppercase tracking-wide">Enterprise</p>
+                        <h3 class="text-3xl font-extrabold text-gray-900">999 SEK</h3>
+                        <p class="text-gray-500 text-sm">per month</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✅ Unlimited Projects</li>
+                        <li>✅ 500 GB Storage</li>
+                        <li>✅ Dedicated Support</li>
+                        <li>✅ Custom Domain</li>
+                        <li>✅ Advanced Analytics</li>
+                    </ul>
+                    <button class="w-full border border-blue-600 text-blue-600 py-2 rounded-lg font-semibold
+                       hover:bg-blue-50 transition-colors duration-300
+                       focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                        Contact Sales
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exercise 10 -->
+    <section id="ex-10">
+        <h2 class="text-2xl font-bold mb-4">10. Simple Navigation Bar</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border border-gray-200
+                rounded-xl px-6 py-4 flex justify-between items-center shadow-sm">
+
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-extrabold text-sm">T</span>
+                    </div>
+                    <span class="text-gray-900 font-bold text-lg">TailwindUI</span>
+                </div>
+
+                <!-- Nav Links -->
+                <ul class="flex items-center gap-6">
+                    <li>
+                        <a href="#" class="text-gray-600 font-medium hover:text-blue-500
+                             transition-colors duration-300">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-600 font-medium hover:text-blue-500
+                             transition-colors duration-300">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-600 font-medium hover:text-blue-500
+                             transition-colors duration-300">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold
+                             hover:bg-blue-700 transition-colors duration-300
+                             focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </section>
+
 </div>
 </body>
 </html>
