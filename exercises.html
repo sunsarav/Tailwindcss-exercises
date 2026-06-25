@@ -402,6 +402,419 @@
         </div>
     </section>
 
+    <!-- Exercise 11 -->
+    <section id="ex-11">
+        <h2 class="text-2xl font-bold mb-4">11. Custom Flexbox Alignment</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200 space-y-6">
+
+            <!-- Layout 1: Centered both ways -->
+            <div>
+                <p class="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-2">
+                    Layout 1 — justify-center items-center
+                </p>
+                <div class="flex justify-center items-center gap-3 h-32 bg-gray-50 rounded-xl border border-gray-200">
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold">1</div>
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold">2</div>
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold">3</div>
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold">4</div>
+                </div>
+            </div>
+
+            <!-- Layout 2: Space between -->
+            <div>
+                <p class="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-2">
+                    Layout 2 — justify-between items-center
+                </p>
+                <div class="flex justify-between items-center h-32 bg-gray-50 rounded-xl border border-gray-200 px-4">
+                    <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center text-white font-bold">1</div>
+                    <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center text-white font-bold">2</div>
+                    <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center text-white font-bold">3</div>
+                    <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center text-white font-bold">4</div>
+                </div>
+            </div>
+
+            <!-- Layout 3: Bottom-right -->
+            <div>
+                <p class="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-2">
+                    Layout 3 — justify-end items-end
+                </p>
+                <div class="flex justify-end items-end gap-3 h-32 bg-gray-50 rounded-xl border border-gray-200 p-4">
+                    <div class="w-12 h-12 bg-violet-500 rounded-lg flex items-center justify-center text-white font-bold">1</div>
+                    <div class="w-12 h-12 bg-violet-500 rounded-lg flex items-center justify-center text-white font-bold">2</div>
+                    <div class="w-12 h-12 bg-violet-500 rounded-lg flex items-center justify-center text-white font-bold">3</div>
+                    <div class="w-12 h-12 bg-violet-500 rounded-lg flex items-center justify-center text-white font-bold">4</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exercise 12 -->
+    <section id="ex-12">
+        <h2 class="text-2xl font-bold mb-4">12. Feature List with Icons</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Feature 1 -->
+                <div class="group flex items-start gap-4 p-4 rounded-xl border border-gray-100
+                  hover:shadow-md transition-shadow duration-300">
+                    <div class="shrink-0 w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center
+                    group-hover:scale-110 transition-transform duration-300 shadow-md shadow-blue-200">
+                        <span class="text-white text-2xl">⚡</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Fast Performance</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mt-1">
+                            Optimised builds that load instantly and run smoothly on any device.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group flex items-start gap-4 p-4 rounded-xl border border-gray-100
+                  hover:shadow-md transition-shadow duration-300">
+                    <div class="shrink-0 w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center
+                    group-hover:scale-110 transition-transform duration-300 shadow-md shadow-green-200">
+                        <span class="text-white text-2xl">🔒</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Secure by Default</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mt-1">
+                            End-to-end encryption and role-based access control built right in.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group flex items-start gap-4 p-4 rounded-xl border border-gray-100
+                  hover:shadow-md transition-shadow duration-300">
+                    <div class="shrink-0 w-14 h-14 bg-violet-600 rounded-xl flex items-center justify-center
+                    group-hover:scale-110 transition-transform duration-300 shadow-md shadow-violet-200">
+                        <span class="text-white text-2xl">🎨</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Fully Customisable</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mt-1">
+                            Tailor every component to match your brand with ease.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="group flex items-start gap-4 p-4 rounded-xl border border-gray-100
+                  hover:shadow-md transition-shadow duration-300">
+                    <div class="shrink-0 w-14 h-14 bg-yellow-500 rounded-xl flex items-center justify-center
+                    group-hover:scale-110 transition-transform duration-300 shadow-md shadow-yellow-200">
+                        <span class="text-white text-2xl">📊</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Detailed Analytics</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mt-1">
+                            Real-time dashboards and reports to track what matters most.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="group flex items-start gap-4 p-4 rounded-xl border border-gray-100
+                  hover:shadow-md transition-shadow duration-300">
+                    <div class="shrink-0 w-14 h-14 bg-red-500 rounded-xl flex items-center justify-center
+                    group-hover:scale-110 transition-transform duration-300 shadow-md shadow-red-200">
+                        <span class="text-white text-2xl">🌍</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Global CDN</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mt-1">
+                            Content delivered from servers closest to your users worldwide.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="group flex items-start gap-4 p-4 rounded-xl border border-gray-100
+                  hover:shadow-md transition-shadow duration-300">
+                    <div class="shrink-0 w-14 h-14 bg-indigo-600 rounded-xl flex items-center justify-center
+                    group-hover:scale-110 transition-transform duration-300 shadow-md shadow-indigo-200">
+                        <span class="text-white text-2xl">🤝</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Team Collaboration</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mt-1">
+                            Invite teammates, assign roles, and work together seamlessly.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exercise 13 -->
+    <section id="ex-13">
+        <h2 class="text-2xl font-bold mb-4">13. Sticky Sidebar Layout</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <div class="grid grid-cols-4 gap-6">
+
+                <!-- Sidebar (col-span-1) -->
+                <aside class="col-span-1">
+                    <div class="sticky top-6 space-y-2">
+
+                        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">
+                            On This Page
+                        </p>
+
+                        <a href="#" class="flex items-center gap-2 text-sm font-medium text-blue-600
+                             bg-blue-50 px-3 py-2 rounded-lg">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                            Introduction
+                        </a>
+                        <a href="#" class="flex items-center gap-2 text-sm font-medium text-gray-500
+                             hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg
+                             transition-colors duration-200">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                            Core Concepts
+                        </a>
+                        <a href="#" class="flex items-center gap-2 text-sm font-medium text-gray-500
+                             hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg
+                             transition-colors duration-200">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                            Installation
+                        </a>
+                        <a href="#" class="flex items-center gap-2 text-sm font-medium text-gray-500
+                             hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg
+                             transition-colors duration-200">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                            Configuration
+                        </a>
+                        <a href="#" class="flex items-center gap-2 text-sm font-medium text-gray-500
+                             hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg
+                             transition-colors duration-200">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                            Examples
+                        </a>
+                        <a href="#" class="flex items-center gap-2 text-sm font-medium text-gray-500
+                             hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg
+                             transition-colors duration-200">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                            FAQ
+                        </a>
+
+                    </div>
+                </aside>
+
+                <!-- Main Content (col-span-3) -->
+                <main class="col-span-3 space-y-8">
+
+                    <!-- Section 1 -->
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 pb-2 border-b border-gray-100">
+                            Introduction
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tailwind CSS is a utility-first CSS framework that gives you low-level
+                            building blocks to construct any design directly in your markup. Unlike
+                            traditional frameworks, Tailwind does not ship with pre-built components —
+                            instead it gives you the tools to build your own.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            This approach keeps your stylesheet lean, your designs consistent, and your
+                            workflow fast. Once you get comfortable with the class names, you rarely
+                            need to leave your HTML file.
+                        </p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 pb-2 border-b border-gray-100">
+                            Core Concepts
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            The core idea behind Tailwind is utility classes — single-purpose class
+                            names like <code class="bg-gray-100 text-blue-600 px-1 rounded text-sm">flex</code>,
+                            <code class="bg-gray-100 text-blue-600 px-1 rounded text-sm">pt-4</code>, and
+                            <code class="bg-gray-100 text-blue-600 px-1 rounded text-sm">text-center</code>
+                            that each do exactly one thing.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            By combining these small classes you can build complex layouts without ever
+                            writing a line of custom CSS. The result is a highly consistent design system
+                            that scales effortlessly across an entire project.
+                        </p>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 pb-2 border-b border-gray-100">
+                            Installation
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            The fastest way to get started is via the CDN script tag — no build step
+                            required. For production projects, install Tailwind as a PostCSS plugin via
+                            npm so the compiler can tree-shake unused styles and keep your bundle small.
+                        </p>
+                        <div class="bg-gray-900 text-green-400 text-sm font-mono px-4 py-3 rounded-lg">
+                            npm install -D tailwindcss postcss autoprefixer
+                        </div>
+                    </div>
+
+                    <!-- Section 4 -->
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 pb-2 border-b border-gray-100">
+                            Configuration
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tailwind is configured via a <code class="bg-gray-100 text-blue-600 px-1 rounded text-sm">tailwind.config.js</code>
+                            file at the root of your project. Here you can extend the default theme,
+                            add custom colors, define breakpoints, and enable plugins.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            The <code class="bg-gray-100 text-blue-600 px-1 rounded text-sm">content</code> array
+                            tells Tailwind which files to scan for class names so unused styles are
+                            safely purged in production builds.
+                        </p>
+                    </div>
+
+                    <!-- Section 5 -->
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 pb-2 border-b border-gray-100">
+                            Examples
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            The best way to learn Tailwind is by building real components. Start with
+                            a simple card, then progress to navbars, grids, modals, and full page
+                            layouts. Each exercise in this document targets a specific set of utilities
+                            so you build muscle memory for the most common patterns.
+                        </p>
+                    </div>
+
+                    <!-- Section 6 -->
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 pb-2 border-b border-gray-100">
+                            FAQ
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            <span class="font-semibold text-gray-800">Is Tailwind only for small projects?</span>
+                            Not at all — Tailwind scales from personal sites to large enterprise
+                            applications. Companies like GitHub, Shopify, and Vercel use it in production.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            <span class="font-semibold text-gray-800">Does it work with React or Vue?</span>
+                            Yes, Tailwind is framework-agnostic. It works with any technology that
+                            outputs HTML, including React, Vue, Svelte, Angular, and plain HTML files.
+                        </p>
+                    </div>
+
+                </main>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exercise 14 -->
+    <section id="ex-14">
+        <h2 class="text-2xl font-bold mb-4">14. Gallery with Aspect Ratios</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <div class="space-y-4">
+
+                <!-- Image 1: aspect-video (16:9) — full width featured -->
+                <div class="overflow-hidden rounded-xl group">
+                    <img
+                            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop"
+                            alt="Mountain landscape"
+                            class="w-full aspect-video object-cover
+                 group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <p class="text-xs text-gray-400 mt-1 px-1">aspect-video — 16:9</p>
+                </div>
+
+                <!-- Images 2, 3, 4: aspect-square (1:1) -->
+                <div class="grid grid-cols-3 gap-4">
+
+                    <div class="overflow-hidden rounded-xl group">
+                        <img
+                                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop"
+                                alt="Forest path"
+                                class="w-full aspect-square object-cover
+                   group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <p class="text-xs text-gray-400 mt-1 px-1">aspect-square — 1:1</p>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl group">
+                        <img
+                                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&h=400&fit=crop"
+                                alt="Sunset"
+                                class="w-full aspect-square object-cover
+                   group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <p class="text-xs text-gray-400 mt-1 px-1">aspect-square — 1:1</p>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl group">
+                        <img
+                                src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=400&h=400&fit=crop"
+                                alt="Dog"
+                                class="w-full aspect-square object-cover
+                   group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <p class="text-xs text-gray-400 mt-1 px-1">aspect-square — 1:1</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exercise 15 -->
+    <section id="ex-15">
+        <h2 class="text-2xl font-bold mb-4">15. Responsive Order Change</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <div class="flex flex-col md:flex-row gap-8">
+
+                <!-- Text Block (first in HTML, moves to left on desktop) -->
+                <div class="order-last md:order-first md:w-1/2 space-y-4 flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Why Order Matters in Layouts</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        In responsive design, the visual order of elements often needs to differ
+                        from the source order in HTML. Tailwind's <code class="bg-gray-100 text-blue-600
+          px-1 rounded text-sm">order-*</code> utilities let you control this without
+                        duplicating any markup.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        On mobile, the image appears first so users immediately see what the
+                        section is about. On desktop, the text moves to the left and the image
+                        sits naturally on the right — all with a single class change.
+                    </p>
+                    <button class="w-fit bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold
+                       hover:bg-blue-700 transition-colors duration-300
+                       focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Image Block (second in HTML, moves to top on mobile) -->
+                <div class="order-first md:order-last md:w-1/2 overflow-hidden rounded-xl">
+                    <img
+                            src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=600&h=400&fit=crop"
+                            alt="Coding workspace"
+                            class="w-full aspect-video object-cover rounded-xl
+                 hover:scale-105 transition-transform duration-500"
+                    />
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
 </div>
 </body>
 </html>
