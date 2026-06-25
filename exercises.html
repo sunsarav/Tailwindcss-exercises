@@ -815,6 +815,588 @@
         </div>
     </section>
 
+    <!-- Exercise 16 -->
+    <section id="ex-16">
+        <h2 class="text-2xl font-bold mb-4">16. Group-Hover Reveal</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+                <!-- Card 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer">
+                    <img
+                            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop"
+                            alt="Laptop"
+                            class="w-full aspect-[4/3] object-cover
+                 group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40
+                    transition-colors duration-300"></div>
+                    <!-- Product Info -->
+                    <div class="absolute top-3 left-3">
+          <span class="bg-white text-gray-800 text-xs font-semibold px-2 py-1 rounded-full">
+            Laptop Pro 15"
+          </span>
+                    </div>
+                    <div class="absolute top-3 right-3">
+          <span class="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full">
+            13 499 SEK
+          </span>
+                    </div>
+                    <!-- Slide-up Button -->
+                    <div class="absolute bottom-0 left-0 right-0
+                    translate-y-full group-hover:translate-y-0
+                    transition-transform duration-300 ease-in-out">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white
+                         font-semibold py-3 transition-colors duration-200">
+                            🛒 Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer">
+                    <img
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop"
+                            alt="Headphones"
+                            class="w-full aspect-[4/3] object-cover
+                 group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40
+                    transition-colors duration-300"></div>
+                    <div class="absolute top-3 left-3">
+          <span class="bg-white text-gray-800 text-xs font-semibold px-2 py-1 rounded-full">
+            Wireless Headphones
+          </span>
+                    </div>
+                    <div class="absolute top-3 right-3">
+          <span class="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full">
+            2 590 SEK
+          </span>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0
+                    translate-y-full group-hover:translate-y-0
+                    transition-transform duration-300 ease-in-out">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white
+                         font-semibold py-3 transition-colors duration-200">
+                            🛒 Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer">
+                    <img
+                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop"
+                            alt="Watch"
+                            class="w-full aspect-[4/3] object-cover
+                 group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40
+                    transition-colors duration-300"></div>
+                    <div class="absolute top-3 left-3">
+          <span class="bg-white text-gray-800 text-xs font-semibold px-2 py-1 rounded-full">
+            Smart Watch Series 5
+          </span>
+                    </div>
+                    <div class="absolute top-3 right-3">
+          <span class="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full">
+            4 149 SEK
+          </span>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0
+                    translate-y-full group-hover:translate-y-0
+                    transition-transform duration-300 ease-in-out">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white
+                         font-semibold py-3 transition-colors duration-200">
+                            🛒 Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exercise 17 -->
+    <section id="ex-17">
+        <h2 class="text-2xl font-bold mb-4">17. Peer-State Toggle (Pure CSS)</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <div class="max-w-md mx-auto space-y-6">
+                <div class="border border-gray-200 rounded-xl p-6 space-y-6 shadow-sm">
+
+                    <!-- Header -->
+                    <div class="space-y-1">
+                        <h3 class="text-lg font-bold text-gray-900">Create Your Account</h3>
+                        <p class="text-sm text-gray-500">Please read and accept the terms before continuing.</p>
+                    </div>
+
+                    <!-- Terms Box -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 h-32 overflow-y-auto
+                    text-sm text-gray-600 leading-relaxed">
+                        By creating an account you agree to our Terms of Service and Privacy Policy.
+                        You confirm that all information provided is accurate and that you are at least
+                        18 years of age. We reserve the right to suspend accounts that violate our
+                        community guidelines. Your data will be handled in accordance with GDPR
+                        regulations applicable in Sweden and the EU.
+                    </div>
+
+                    <!-- Checkbox (peer) — visible, styled with accent color -->
+                    <input
+                            type="checkbox"
+                            id="terms"
+                            class="peer w-5 h-5 accent-green-600 cursor-pointer"
+                    />
+
+                    <!-- Label -->
+                    <label for="terms" class="flex items-start gap-3 cursor-pointer -mt-4">
+                        <span class="w-5 shrink-0"></span>
+                        <span class="text-sm text-gray-600 leading-relaxed
+                       peer-checked:text-green-700 transition-colors duration-300">
+            I have read and agree to the
+            <a href="#" class="text-blue-600 underline hover:text-blue-700">Terms and Conditions</a>
+            and
+            <a href="#" class="text-blue-600 underline hover:text-blue-700">Privacy Policy</a>.
+          </span>
+                    </label>
+
+                    <!-- Submit Button -->
+                    <button
+                            class="w-full bg-gray-300 text-white font-semibold py-2.5 rounded-lg
+                 pointer-events-none opacity-50
+                 peer-checked:bg-green-600 peer-checked:opacity-100
+                 peer-checked:pointer-events-auto peer-checked:cursor-pointer
+                 peer-checked:hover:bg-green-700 peer-checked:shadow-md
+                 transition-all duration-300">
+                        ✅ Submit
+                    </button>
+
+                </div>
+
+                <!-- State Indicator -->
+                <div class="text-center space-y-1">
+                    <p class="text-xs text-gray-400 uppercase tracking-wide font-semibold">Current State</p>
+                    <p class="text-sm text-gray-500">
+                        Unchecked → <span class="text-red-400 font-semibold">Button disabled</span>
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        Checked → <span class="text-green-600 font-semibold">Button enabled</span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exercise 18 -->
+    <section id="ex-18">
+        <h2 class="text-2xl font-bold mb-4">18. Dark Mode Toggle Simulation</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <!-- Tell Tailwind CDN to use class-based dark mode -->
+            <script>
+                tailwind.config = { darkMode: 'class' }
+            </script>
+
+            <div class="space-y-6">
+
+                <!-- Toggle Button -->
+                <div class="flex items-center gap-3">
+                    <span class="text-sm font-semibold text-gray-500">☀️ Light</span>
+                    <button
+                            id="toggle-btn"
+                            onclick="
+            const wrapper = document.getElementById('dark-wrapper');
+            const dot = document.getElementById('toggle-dot');
+            const btn = document.getElementById('toggle-btn');
+            wrapper.classList.toggle('dark');
+            const isDark = wrapper.classList.contains('dark');
+            dot.style.transform = isDark ? 'translateX(24px)' : 'translateX(0)';
+            btn.style.backgroundColor = isDark ? '#2563eb' : '#d1d5db';
+          "
+                            class="relative w-12 h-6 bg-gray-300 rounded-full transition-colors duration-300
+                 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+          <span
+                  id="toggle-dot"
+                  class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow
+                   transition-transform duration-300">
+          </span>
+                    </button>
+                    <span class="text-sm font-semibold text-gray-500">🌙 Dark</span>
+                </div>
+
+                <!-- Dark Mode Wrapper — no dark class by default = light mode -->
+                <div id="dark-wrapper" class="rounded-xl overflow-hidden transition-colors duration-300">
+
+                    <div class="bg-gray-50 dark:bg-slate-900 p-8 rounded-xl
+                    border border-gray-200 dark:border-slate-700
+                    transition-colors duration-300 space-y-6">
+
+                        <!-- Navbar -->
+                        <nav class="flex justify-between items-center pb-4
+                      border-b border-gray-200 dark:border-slate-700
+                      transition-colors duration-300">
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                                    <span class="text-white font-extrabold text-sm">T</span>
+                                </div>
+                                <span class="font-bold text-gray-900 dark:text-white transition-colors duration-300">
+                TailwindUI
+              </span>
+                            </div>
+                            <div class="flex gap-4 text-sm font-medium">
+                                <a href="#" class="text-gray-500 dark:text-slate-400 hover:text-blue-500
+                                 dark:hover:text-blue-400 transition-colors duration-200">Home</a>
+                                <a href="#" class="text-gray-500 dark:text-slate-400 hover:text-blue-500
+                                 dark:hover:text-blue-400 transition-colors duration-200">About</a>
+                                <a href="#" class="text-gray-500 dark:text-slate-400 hover:text-blue-500
+                                 dark:hover:text-blue-400 transition-colors duration-200">Contact</a>
+                            </div>
+                        </nav>
+
+                        <!-- Hero Text -->
+                        <div class="space-y-3">
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
+                                Welcome Back 👋
+                            </h3>
+                            <p class="text-gray-600 dark:text-slate-400 leading-relaxed transition-colors duration-300">
+                                This card switches between light and dark mode using only a
+                                parent <code class="bg-gray-200 dark:bg-slate-700 dark:text-white
+              px-1 rounded text-sm transition-colors duration-300">dark</code> class
+                                toggle — no separate stylesheets needed.
+                            </p>
+                        </div>
+
+                        <!-- Input Fields -->
+                        <div class="space-y-3">
+                            <input type="text" placeholder="Your name"
+                                   class="w-full px-4 py-2 rounded-lg
+                     border border-gray-200 dark:border-slate-600
+                     bg-white dark:bg-slate-800
+                     text-gray-900 dark:text-white
+                     placeholder:text-gray-400 dark:placeholder:text-slate-500
+                     focus:outline-none focus:ring-2 focus:ring-blue-500
+                     transition-colors duration-300"/>
+                            <input type="email" placeholder="Your email"
+                                   class="w-full px-4 py-2 rounded-lg
+                     border border-gray-200 dark:border-slate-600
+                     bg-white dark:bg-slate-800
+                     text-gray-900 dark:text-white
+                     placeholder:text-gray-400 dark:placeholder:text-slate-500
+                     focus:outline-none focus:ring-2 focus:ring-blue-500
+                     transition-colors duration-300"/>
+                        </div>
+
+                        <!-- Alert -->
+                        <div class="bg-blue-50 dark:bg-blue-900/30 border border-blue-200
+                      dark:border-blue-800 rounded-lg p-4 transition-colors duration-300">
+                            <p class="text-sm text-blue-700 dark:text-blue-300 font-medium">
+                                💡 Click the toggle above to switch between light and dark mode.
+                            </p>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex gap-3 pt-2">
+                            <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold
+                           py-2 rounded-lg transition-colors duration-200
+                           focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2
+                           dark:focus:ring-offset-slate-900">
+                                Sign In
+                            </button>
+                            <button class="flex-1 border border-gray-200 dark:border-slate-600
+                           text-gray-700 dark:text-slate-300 hover:bg-gray-100
+                           dark:hover:bg-slate-800 font-semibold py-2 rounded-lg
+                           transition-colors duration-200">
+                                Register
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise 19 -->
+    <section id="ex-19">
+        <h2 class="text-2xl font-bold mb-4">19. Form Validation UI</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <div class="max-w-md mx-auto space-y-6">
+
+                <!-- Name Field (valid by default — no validation) -->
+                <div class="space-y-1">
+                    <label class="text-sm font-semibold text-gray-700">Full Name</label>
+                    <input
+                            type="text"
+                            placeholder="John Doe"
+                            class="peer w-full px-4 py-2 rounded-lg border border-gray-200
+                 focus:outline-none focus:ring-2 focus:ring-blue-500
+                 transition-all duration-200"
+                    />
+                </div>
+
+                <!-- Email Field (with validation) -->
+                <div class="space-y-1">
+                    <label class="text-sm font-semibold text-gray-700">Email Address</label>
+                    <input
+                            type="email"
+                            placeholder="you@example.com"
+                            required
+                            class="peer w-full px-4 py-2 rounded-lg border border-gray-200
+                 focus:outline-none focus:ring-2 focus:ring-blue-500
+                 invalid:border-red-400 invalid:bg-red-50
+                 focus:invalid:border-red-500 focus:invalid:ring-2
+                 focus:invalid:ring-red-500 focus:invalid:ring-offset-0
+                 transition-all duration-200"
+                    />
+                    <!-- Error message: only visible when input is focused AND invalid -->
+                    <p class="hidden peer-focus:peer-invalid:flex items-center gap-1.5
+                  text-sm text-red-500 font-medium pt-0.5">
+                        <span>⚠️</span> Please enter a valid email address.
+                    </p>
+                </div>
+
+                <!-- Password Field (with min-length validation) -->
+                <div class="space-y-1">
+                    <label class="text-sm font-semibold text-gray-700">Password</label>
+                    <input
+                            type="password"
+                            placeholder="Min. 8 characters"
+                            minlength="8"
+                            required
+                            class="peer w-full px-4 py-2 rounded-lg border border-gray-200
+                 focus:outline-none focus:ring-2 focus:ring-blue-500
+                 invalid:border-red-400 invalid:bg-red-50
+                 focus:invalid:border-red-500 focus:invalid:ring-2
+                 focus:invalid:ring-red-500
+                 valid:border-green-400 valid:bg-green-50
+                 focus:valid:ring-green-500
+                 transition-all duration-200"
+                    />
+                    <p class="hidden peer-focus:peer-invalid:flex items-center gap-1.5
+                  text-sm text-red-500 font-medium pt-0.5">
+                        <span>⚠️</span> Password must be at least 8 characters.
+                    </p>
+                    <p class="hidden peer-focus:peer-valid:flex items-center gap-1.5
+                  text-sm text-green-600 font-medium pt-0.5">
+                        <span>✅</span> Looks good!
+                    </p>
+                </div>
+
+                <!-- Submit -->
+                <button class="w-full bg-blue-600 text-white font-semibold py-2.5 rounded-lg
+                     hover:bg-blue-700 transition-colors duration-200
+                     focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                    Create Account
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Exercise 20 -->
+    <section id="ex-20">
+        <h2 class="text-2xl font-bold mb-4">20. Full Dashboard Shell</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+
+            <!-- Dashboard is simulated inside a fixed-height container -->
+            <div class="relative h-[600px] rounded-xl overflow-hidden border border-gray-200 flex">
+
+                <!-- ===== SIDEBAR (hidden on mobile, visible md+) ===== -->
+                <aside class="hidden md:flex flex-col w-64 h-full bg-slate-900
+                    border-r border-slate-700 shrink-0">
+
+                    <!-- Logo -->
+                    <div class="flex items-center gap-2 px-6 py-5 border-b border-slate-700">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-extrabold text-sm">D</span>
+                        </div>
+                        <span class="text-white font-bold text-lg">Dashboard</span>
+                    </div>
+
+                    <!-- Nav Links -->
+                    <nav class="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
+                        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg
+                             bg-blue-600 text-white text-sm font-medium">
+                            <span>🏠</span> Overview
+                        </a>
+                        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg
+                             text-slate-400 hover:bg-slate-800 hover:text-white
+                             text-sm font-medium transition-colors duration-200">
+                            <span>📊</span> Analytics
+                        </a>
+                        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg
+                             text-slate-400 hover:bg-slate-800 hover:text-white
+                             text-sm font-medium transition-colors duration-200">
+                            <span>🛒</span> Orders
+                        </a>
+                        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg
+                             text-slate-400 hover:bg-slate-800 hover:text-white
+                             text-sm font-medium transition-colors duration-200">
+                            <span>👥</span> Customers
+                        </a>
+                        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg
+                             text-slate-400 hover:bg-slate-800 hover:text-white
+                             text-sm font-medium transition-colors duration-200">
+                            <span>📦</span> Products
+                        </a>
+                        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg
+                             text-slate-400 hover:bg-slate-800 hover:text-white
+                             text-sm font-medium transition-colors duration-200">
+                            <span>⚙️</span> Settings
+                        </a>
+                    </nav>
+
+                    <!-- User Profile -->
+                    <div class="px-4 py-4 border-t border-slate-700 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center shrink-0">
+                            <span class="text-white text-xs font-bold">SS</span>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p class="text-white text-sm font-semibold truncate">Shanmuga Sundari</p>
+                            <p class="text-slate-400 text-xs truncate">Full Stack Developer</p>
+                        </div>
+                    </div>
+
+                </aside>
+
+                <!-- ===== MAIN AREA ===== -->
+                <div class="flex-1 flex flex-col overflow-hidden">
+
+                    <!-- Top Header -->
+                    <header class="flex items-center justify-between px-6 py-4
+                       bg-white border-b border-gray-200 shrink-0">
+                        <div>
+                            <h2 class="text-lg font-bold text-gray-900">Overview</h2>
+                            <p class="text-xs text-gray-400">Thursday, 19 June 2025</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="text-gray-400 hover:text-gray-600 transition-colors">
+                                🔔
+                            </button>
+                            <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
+                                <span class="text-white text-xs font-bold">SS</span>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Main Content -->
+                    <main class="flex-1 overflow-y-auto bg-gray-50 p-6 space-y-6">
+
+                        <!-- Stat Cards -->
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100 space-y-1">
+                                <p class="text-xs text-gray-400 font-medium">Total Revenue</p>
+                                <p class="text-xl font-bold text-gray-900">842 500 SEK</p>
+                                <p class="text-xs text-green-500 font-semibold">▲ 12% this month</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100 space-y-1">
+                                <p class="text-xs text-gray-400 font-medium">New Orders</p>
+                                <p class="text-xl font-bold text-gray-900">1 284</p>
+                                <p class="text-xs text-green-500 font-semibold">▲ 8% this month</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100 space-y-1">
+                                <p class="text-xs text-gray-400 font-medium">Customers</p>
+                                <p class="text-xl font-bold text-gray-900">9 430</p>
+                                <p class="text-xs text-blue-500 font-semibold">▲ 3% this month</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100 space-y-1">
+                                <p class="text-xs text-gray-400 font-medium">Refunds</p>
+                                <p class="text-xl font-bold text-gray-900">38</p>
+                                <p class="text-xs text-red-400 font-semibold">▼ 2% this month</p>
+                            </div>
+                        </div>
+
+                        <!-- Recent Orders Table -->
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                            <div class="px-5 py-4 border-b border-gray-100">
+                                <h3 class="font-bold text-gray-900 text-sm">Recent Orders</h3>
+                            </div>
+                            <table class="w-full text-sm">
+                                <thead class="bg-gray-50 text-gray-400 text-xs uppercase tracking-wide">
+                                <tr>
+                                    <th class="px-5 py-3 text-left">Order</th>
+                                    <th class="px-5 py-3 text-left">Customer</th>
+                                    <th class="px-5 py-3 text-left">Amount</th>
+                                    <th class="px-5 py-3 text-left">Status</th>
+                                </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-50">
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-5 py-3 font-medium text-gray-900">#1042</td>
+                                    <td class="px-5 py-3 text-gray-600">Erik Karlsson</td>
+                                    <td class="px-5 py-3 text-gray-900 font-semibold">2 199 SEK</td>
+                                    <td class="px-5 py-3">
+                    <span class="bg-green-100 text-green-700 text-xs font-semibold
+                                 px-2 py-0.5 rounded-full">Delivered</span>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-5 py-3 font-medium text-gray-900">#1041</td>
+                                    <td class="px-5 py-3 text-gray-600">Anna Lindqvist</td>
+                                    <td class="px-5 py-3 text-gray-900 font-semibold">899 SEK</td>
+                                    <td class="px-5 py-3">
+                    <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold
+                                 px-2 py-0.5 rounded-full">Pending</span>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-5 py-3 font-medium text-gray-900">#1040</td>
+                                    <td class="px-5 py-3 text-gray-600">Marcus Holm</td>
+                                    <td class="px-5 py-3 text-gray-900 font-semibold">4 599 SEK</td>
+                                    <td class="px-5 py-3">
+                    <span class="bg-blue-100 text-blue-700 text-xs font-semibold
+                                 px-2 py-0.5 rounded-full">Processing</span>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-5 py-3 font-medium text-gray-900">#1039</td>
+                                    <td class="px-5 py-3 text-gray-600">Sara Bergström</td>
+                                    <td class="px-5 py-3 text-gray-900 font-semibold">1 349 SEK</td>
+                                    <td class="px-5 py-3">
+                    <span class="bg-red-100 text-red-700 text-xs font-semibold
+                                 px-2 py-0.5 rounded-full">Refunded</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </main>
+
+                    <!-- ===== BOTTOM NAV (mobile only, hidden md+) ===== -->
+                    <nav class="md:hidden flex items-center justify-around
+                    bg-white border-t border-gray-200 py-3 shrink-0">
+                        <a href="#" class="flex flex-col items-center gap-0.5 text-blue-600">
+                            <span class="text-lg">🏠</span>
+                            <span class="text-xs font-medium">Home</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-0.5 text-gray-400">
+                            <span class="text-lg">📊</span>
+                            <span class="text-xs font-medium">Analytics</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-0.5 text-gray-400">
+                            <span class="text-lg">🛒</span>
+                            <span class="text-xs font-medium">Orders</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-0.5 text-gray-400">
+                            <span class="text-lg">⚙️</span>
+                            <span class="text-xs font-medium">Settings</span>
+                        </a>
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
 </div>
 </body>
 </html>
